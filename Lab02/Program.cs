@@ -59,6 +59,7 @@ namespace Lab02
             double critMultiplier1 = 1.25;
             bool isBoss1 = false;
 
+            Console.WriteLine("Enemy 1");
             Console.WriteLine($"Name: {bossName1}");
             Console.WriteLine($"Rank: {rank1}");
             Console.WriteLine($"Level: {level1}");
@@ -81,6 +82,7 @@ namespace Lab02
             double critMultiplier2 = 1.00;
             bool isBoss2 = false;
 
+            Console.WriteLine("Enemy 2");
             Console.WriteLine($"Name: {bossName2}");
             Console.WriteLine($"Rank: {rank2}");
             Console.WriteLine($"Level: {level2}");
@@ -100,6 +102,7 @@ namespace Lab02
             double critMultiplier3 = 2.25;
             bool isBoss3 = false;
 
+            Console.WriteLine("Enemy 3");
             Console.WriteLine($"Name: {bossName3}");
             Console.WriteLine($"Rank: {rank3}");
             Console.WriteLine($"Level: {level3}");
@@ -115,10 +118,11 @@ namespace Lab02
             string rank4 = 'B+';
             int level4 = 7;
             int maxHP4 = 110;
-            float attackPower4 = 15.5;
+            float attackPower4 = 15.5f;
             double critMultiplier4 = 1.75;
             bool isBoss4 = false;
 
+            Console.WriteLine("Enemy 4");
             Console.WriteLine($"Name: {bossName4}");
             Console.WriteLine($"Rank: {rank4}");
             Console.WriteLine($"Level: {level4}");
