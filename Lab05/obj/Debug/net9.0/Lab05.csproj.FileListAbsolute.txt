@@ -1,0 +1,15 @@
+D:\1690704448 (Sa.Asa)\GitHub Repositories\GI113-2026-1690704448\Lab05\bin\Debug\net9.0\Lab05.exe
+D:\1690704448 (Sa.Asa)\GitHub Repositories\GI113-2026-1690704448\Lab05\bin\Debug\net9.0\Lab05.deps.json
+D:\1690704448 (Sa.Asa)\GitHub Repositories\GI113-2026-1690704448\Lab05\bin\Debug\net9.0\Lab05.runtimeconfig.json
+D:\1690704448 (Sa.Asa)\GitHub Repositories\GI113-2026-1690704448\Lab05\bin\Debug\net9.0\Lab05.dll
+D:\1690704448 (Sa.Asa)\GitHub Repositories\GI113-2026-1690704448\Lab05\bin\Debug\net9.0\Lab05.pdb
+D:\1690704448 (Sa.Asa)\GitHub Repositories\GI113-2026-1690704448\Lab05\obj\Debug\net9.0\Lab05.GeneratedMSBuildEditorConfig.editorconfig
+D:\1690704448 (Sa.Asa)\GitHub Repositories\GI113-2026-1690704448\Lab05\obj\Debug\net9.0\Lab05.AssemblyInfoInputs.cache
+D:\1690704448 (Sa.Asa)\GitHub Repositories\GI113-2026-1690704448\Lab05\obj\Debug\net9.0\Lab05.AssemblyInfo.cs
+D:\1690704448 (Sa.Asa)\GitHub Repositories\GI113-2026-1690704448\Lab05\obj\Debug\net9.0\Lab05.csproj.CoreCompileInputs.cache
+D:\1690704448 (Sa.Asa)\GitHub Repositories\GI113-2026-1690704448\Lab05\obj\Debug\net9.0\Lab05.sourcelink.json
+D:\1690704448 (Sa.Asa)\GitHub Repositories\GI113-2026-1690704448\Lab05\obj\Debug\net9.0\Lab05.dll
+D:\1690704448 (Sa.Asa)\GitHub Repositories\GI113-2026-1690704448\Lab05\obj\Debug\net9.0\refint\Lab05.dll
+D:\1690704448 (Sa.Asa)\GitHub Repositories\GI113-2026-1690704448\Lab05\obj\Debug\net9.0\Lab05.pdb
+D:\1690704448 (Sa.Asa)\GitHub Repositories\GI113-2026-1690704448\Lab05\obj\Debug\net9.0\Lab05.genruntimeconfig.cache
+D:\1690704448 (Sa.Asa)\GitHub Repositories\GI113-2026-1690704448\Lab05\obj\Debug\net9.0\ref\Lab05.dll
