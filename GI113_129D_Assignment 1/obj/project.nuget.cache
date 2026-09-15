@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XKdxF0rlFX0=",
+  "dgSpecHash": "v7//JV4geAw=",
   "success": true,
-  "projectFilePath": "D:\\1690704448 (Sa.Asa)\\GitHub Repositories\\GI113-2026-1690704448\\GI113_129D_Assignment 1\\GI113_129D_Assignment 1.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.18\\microsoft.windowsdesktop.app.ref.9.0.18.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.18\\microsoft.netcore.app.ref.9.0.18.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\9.0.18\\microsoft.aspnetcore.app.ref.9.0.18.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\9.0.18\\microsoft.netcore.app.host.win-x64.9.0.18.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\user\\OneDrive\\Documents\\GitHub\\GI113-2026-1690704448\\GI113_129D_Assignment 1\\GI113_129D_Assignment 1.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
