@@ -13,9 +13,9 @@ namespace Assignment_02
         {
             // Variables -------------------------------------------------------------
             const string Element = "Iron";
-            const double SmeltingRate = 0.5;
-            const double SalvageRate = 0.25;
-            const double MaxBatch = 1000;
+            const double SmeltingRate = 0.25;
+            const double SalvageRate = 0.3;
+            const double MaximumAmount = 1000;
             // -----------------------------------------------------------------------
 
             // Menu ------------------------------------------------------------------
@@ -23,15 +23,50 @@ namespace Assignment_02
             Console.WriteLine("<====> Forging Menu <====>");
             Console.WriteLine("<===========--===========>");
 
-            // Action
-            Console.WriteLine("What do you want to do?"); 
+            // Action Input 
+            Console.WriteLine("What do you want to do?");
             Console.WriteLine("Choose 'S' for smelting"); // ore to bar 
             Console.WriteLine("Choose 'B' for break down"); // bar to ore
-            bool inputChoice = char.TryParse(Console.ReadLine(), out char choice);
+            bool inputChoice = char.TryParse(Console.ReadLine(), out char forgeChoice);
+            Console.WriteLine($"Chosen action: {forgeChoice}");
 
-            // Amount
+            // Amount Input
             Console.WriteLine("Your desired amount: ");
-            bool inputAmount = double.TryParse(Console.ReadLine(), out double amount);
+            bool inputAmount = double.TryParse(Console.ReadLine(), out double forgeAmount);
+            Console.WriteLine($"Chosen amount: {forgeAmount}");
+
+            if (!inputChoice || (forgeChoice != 'S' && forgeChoice != 's' && forgeChoice != 'B' && forgeChoice != 'b'))
+            {
+                Console.WriteLine("\n-------------------------------------------------------");
+                Console.WriteLine("Please only choose between S(smelting) and B(Breakdown)!");
+                Console.WriteLine("-------------------------------------------------------");
+            }
+            else if (!inputAmount || forgeAmount <= 0 || forgeAmount > MaximumAmount)
+            {
+                Console.WriteLine("\n---------------------------------------------");
+                Console.WriteLine("You're overwhelming the forge! Maximum's 1000.");
+                Console.WriteLine("----------------------------------------------");
+            }
+            else
+            {
+                if (inputChoice && (forgeChoice == 'S' || forgeChoice == 's')) // Smelt
+                {
+                    double outputAmount = (forgeAmount * SmeltingRate);
+                    Console.WriteLine($"-----===== Success! =====-----");
+                    Console.WriteLine($"Formula, [Amount({forgeAmount}) x Smelt Rate({SmeltingRate})]");
+                    Console.WriteLine($"You've smelted in total: {outputAmount} {Element}");
+                    Console.WriteLine($"---------------------------------");
+                }
+                else // Salvage
+                {
+                    double outputAmount = (forgeAmount / SalvageRate);
+                    Console.WriteLine($"-----===== Success! =====-----");
+                    Console.WriteLine($"Formula, [Amount({forgeAmount}) / Salvage Rate({SalvageRate})]");
+                    Console.WriteLine($"You've salvaged in total: {outputAmount} {Element}");
+                    Console.WriteLine($"----------------------------------");
+                }
+            }
         }
     }
 }
+
