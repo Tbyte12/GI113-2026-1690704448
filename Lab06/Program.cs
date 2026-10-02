@@ -1,6 +1,6 @@
 ﻿/*
 * Student ID :1690704448
-* Name       :ศักรินทร์ อาษาวัง
+* Name       :Lab 06
 * Section    :129D
 * No.        :22
 * Course     :GI113 Computer Programming (GI)
