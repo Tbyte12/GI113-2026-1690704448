@@ -1,96 +1,149 @@
-﻿namespace Lab06
+﻿/*
+* Student ID :1690704448
+* Name       :ศักรินทร์ อาษาวัง
+* Section    :129D
+* No.        :22
+* Course     :GI113 Computer Programming (GI)
+*/
+using System.Collections;
+using System.ComponentModel.Design;
+using System.Runtime.InteropServices;
+
+namespace Lab06
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            int oppsHp = 100;
+            int oppsPunchDmg = 50;
+            int playerHp = 100;
+            int punchDmg = 50;
+            int kickDmg = 100;
+
+            //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+            //Class's Lecture is saved in separate note****
+            //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
             // Player Info ---------------------------------------------------------##
 
-            Console.WriteLine("Your recruit's name: ");
-            string recruitName = Console.ReadLine();
+            Console.WriteLine("Your name: ");
+            string boxerName = Console.ReadLine();
 
-            Console.WriteLine("What is your military rank(1-5): "); // 1 = soldat, 5 = sergeant
-            bool rank = int.TryParse(Console.ReadLine(), out int ranking);
+            Console.WriteLine("Your weight: ");
+            bool wOk = int.TryParse(Console.ReadLine(), out int weight);
 
             Console.WriteLine("What is your experience(Lvl, 1-100): ");
-            bool exp = int.TryParse(Console.ReadLine(), out int experience);
-
-            // Player Info Summary -------------------------------------------------##
-
-            Console.WriteLine($"Recruit's name: , {recruitName}");
-            Console.WriteLine($"Recruit's rank: , {ranking}");
-            Console.WriteLine($"Recruit's experiences: , {experience}");
+            bool expOk = int.TryParse(Console.ReadLine(), out int experience);
+            if (!expOk || experience < 1 || experience > 100)
+            {
+                Console.WriteLine("Invalid input. Experience set to 0.");
+                experience = 0;
+            }
 
             // Game Start --------------------------------------------------------- ##
 
-            Console.WriteLine("\n\n-----------------------------------");
-            Console.WriteLine("--      Military Recruitment     --");
+            Console.WriteLine("\n-----------------------------------");
+            Console.WriteLine("--        Boxing Showdown        --");
             Console.WriteLine("-----------------------------------");
 
-            Console.WriteLine("\nCommander: Hello recruit. Today's your examination. You're...");
-            Console.WriteLine($"Player: I'm {recruitName}, sir!");
-            Console.WriteLine("\nCommander: Oh, well get your arse ready and grab your sh--!");
-            Console.WriteLine("Recruit: Aye aye sir!");
-            Console.WriteLine("\n-----------------------------------");
+            // 1st condition ----------------------------------------------------------- ##
 
-            // 1st group condition 1 --------------------------------------------------------- ##
-
-            Console.WriteLine("\nYour final rank summary:"); 
-            Console.WriteLine($"\nName:, {recruitName} ");
-            if (ranking == 5)
+            if (weight >= 90)
             {
-                Console.WriteLine("Rank = Sergeant");
+                Console.WriteLine("Class = Heavyweight");
             }
-            else if (ranking == 4)
+            else if (weight >= 70)
             {
-                Console.WriteLine("Rank = Specialist");
+                Console.WriteLine("Class = Middleweight");
             }
-            else if (ranking == 3)
+            else if (weight >= 60)
             {
-                Console.WriteLine("Rank = Corporal");
+                Console.WriteLine("Class = Lightweight");
             }
-            else if (ranking == 2)
+            else if (weight >= 50)
             {
-                Console.WriteLine("Rank = Pvt. 1st Class");
+                Console.WriteLine("Class = Featherweight");
             }
             else
             {
-                Console.WriteLine("Rank = Private");
+                Console.WriteLine("Class = Flyweight");
             }
-
-            // 1st group condition 2 --------------------------------------------------------- ##
-
+            //--------------------------------------------------------------------------
             if (experience >= 90)
             {
                 Console.WriteLine("EXP = Combat Ready");
-                int recruitStam = 100;
-                Console.WriteLine($"Stamina = {recruitStam}");
             }
             else if (experience >= 75)
             {
                 Console.WriteLine("EXP = Highly Prepared");
-                int recruitStam = 85;
-                Console.WriteLine($"Stamina = {recruitStam}");
             }
             else if (experience >= 50)
             {
                 Console.WriteLine("EXP = Prepared");
-                int recruitStam = 70;
-                Console.WriteLine($"Stamina = {recruitStam}");
             }
             else if (experience >= 25)
             {
                 Console.WriteLine("EXP = Poorly Prepared");
-                int recruitStam = 55;
-                Console.WriteLine($"Stamina = {recruitStam}");
             }
             else
             {
                 Console.WriteLine("EXP = Not Ready For Combat");
-                int recruitStam = 40;
-                Console.WriteLine($"Stamina = {recruitStam}");
             }
             Console.WriteLine("\n-----------------------------------");
+            Console.WriteLine("\n===================================");
+            // 2nd condition --------------------------------------------------------- ##
+
+            Console.WriteLine("\n1st Turn");
+
+            Console.WriteLine("CHOICE 1: PUNCH");
+            Console.WriteLine("CHOICE 2: KICK");
+            Console.WriteLine("CHOICE 3: BLOCK");
+
+            Console.WriteLine("CHOOSE YOUR NEXT MOVE(1-3)");
+            bool inputValid = int.TryParse(Console.ReadLine(), out int choice);
+
+            if (!inputValid || choice < 1 || choice > 3)
+            {
+                Console.WriteLine("Invalid input, please only choose from 1-3!");
+            }
+            else if (choice == 1)
+            {
+                oppsHp -= punchDmg;
+                if (oppsHp <= 0)
+                {
+                    Console.WriteLine("Opponent is KO'd");
+                }
+                else
+                {
+                    Console.WriteLine($"Opponent took {punchDmg} DMG! Opponent has {oppsHp} HP left!");
+                }
+            }
+            else if (choice == 2)
+            {
+                oppsHp -= kickDmg;
+                if (oppsHp <= 0)
+                {
+                    Console.WriteLine("Opponent is KO'd");
+                }
+                else
+                {
+                    Console.WriteLine($"Opponent took {kickDmg} DMG! Opponent has {oppsHp} HP left!");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Opponent decided to punch you!");
+                playerHp -= oppsPunchDmg;
+                if (playerHp < 0)
+                {
+                    Console.WriteLine("You've been KO'd");
+                }
+                else
+                {
+                    Console.WriteLine($"You took {oppsPunchDmg} DMG! You have {playerHp} left!");
+                }
+            }
         }
     }
 }
