@@ -28,9 +28,69 @@
             Console.WriteLine("-----------------------------------");
 
             Console.WriteLine("\nCommander: Hello recruit. Today's your examination. You're...");
-            Console.WriteLine($"Recruit: I'm {recruitName}, sir!");
+            Console.WriteLine($"Player: I'm {recruitName}, sir!");
             Console.WriteLine("\nCommander: Oh, well get your arse ready and grab your sh--!");
             Console.WriteLine("Recruit: Aye aye sir!");
+            Console.WriteLine("\n-----------------------------------");
+
+            // 1st group condition 1 --------------------------------------------------------- ##
+
+            Console.WriteLine("\nYour final rank summary:"); 
+            Console.WriteLine($"\nName:, {recruitName} ");
+            if (ranking == 5)
+            {
+                Console.WriteLine("Rank = Sergeant");
+            }
+            else if (ranking == 4)
+            {
+                Console.WriteLine("Rank = Specialist");
+            }
+            else if (ranking == 3)
+            {
+                Console.WriteLine("Rank = Corporal");
+            }
+            else if (ranking == 2)
+            {
+                Console.WriteLine("Rank = Pvt. 1st Class");
+            }
+            else
+            {
+                Console.WriteLine("Rank = Private");
+            }
+
+            // 1st group condition 2 --------------------------------------------------------- ##
+
+            if (experience >= 90)
+            {
+                Console.WriteLine("EXP = Combat Ready");
+                int recruitStam = 100;
+                Console.WriteLine($"Stamina = {recruitStam}");
+            }
+            else if (experience >= 75)
+            {
+                Console.WriteLine("EXP = Highly Prepared");
+                int recruitStam = 85;
+                Console.WriteLine($"Stamina = {recruitStam}");
+            }
+            else if (experience >= 50)
+            {
+                Console.WriteLine("EXP = Prepared");
+                int recruitStam = 70;
+                Console.WriteLine($"Stamina = {recruitStam}");
+            }
+            else if (experience >= 25)
+            {
+                Console.WriteLine("EXP = Poorly Prepared");
+                int recruitStam = 55;
+                Console.WriteLine($"Stamina = {recruitStam}");
+            }
+            else
+            {
+                Console.WriteLine("EXP = Not Ready For Combat");
+                int recruitStam = 40;
+                Console.WriteLine($"Stamina = {recruitStam}");
+            }
+            Console.WriteLine("\n-----------------------------------");
         }
     }
 }
