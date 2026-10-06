@@ -1,0 +1,14 @@
+D:\Sakarin.asaw\Mid-Term Exam part 2 16904448\bin\Debug\net9.0\Mid-Term Exam part 2 16904448.exe
+D:\Sakarin.asaw\Mid-Term Exam part 2 16904448\bin\Debug\net9.0\Mid-Term Exam part 2 16904448.deps.json
+D:\Sakarin.asaw\Mid-Term Exam part 2 16904448\bin\Debug\net9.0\Mid-Term Exam part 2 16904448.runtimeconfig.json
+D:\Sakarin.asaw\Mid-Term Exam part 2 16904448\bin\Debug\net9.0\Mid-Term Exam part 2 16904448.dll
+D:\Sakarin.asaw\Mid-Term Exam part 2 16904448\bin\Debug\net9.0\Mid-Term Exam part 2 16904448.pdb
+D:\Sakarin.asaw\Mid-Term Exam part 2 16904448\obj\Debug\net9.0\Mid-Term Exam part 2 16904448.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sakarin.asaw\Mid-Term Exam part 2 16904448\obj\Debug\net9.0\Mid-Term Exam part 2 16904448.AssemblyInfoInputs.cache
+D:\Sakarin.asaw\Mid-Term Exam part 2 16904448\obj\Debug\net9.0\Mid-Term Exam part 2 16904448.AssemblyInfo.cs
+D:\Sakarin.asaw\Mid-Term Exam part 2 16904448\obj\Debug\net9.0\Mid-Term Exam part 2 16904448.csproj.CoreCompileInputs.cache
+D:\Sakarin.asaw\Mid-Term Exam part 2 16904448\obj\Debug\net9.0\Mid-Term Exam part 2 16904448.dll
+D:\Sakarin.asaw\Mid-Term Exam part 2 16904448\obj\Debug\net9.0\refint\Mid-Term Exam part 2 16904448.dll
+D:\Sakarin.asaw\Mid-Term Exam part 2 16904448\obj\Debug\net9.0\Mid-Term Exam part 2 16904448.pdb
+D:\Sakarin.asaw\Mid-Term Exam part 2 16904448\obj\Debug\net9.0\Mid-Term Exam part 2 16904448.genruntimeconfig.cache
+D:\Sakarin.asaw\Mid-Term Exam part 2 16904448\obj\Debug\net9.0\ref\Mid-Term Exam part 2 16904448.dll
